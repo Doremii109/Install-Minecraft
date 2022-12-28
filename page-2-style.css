@@ -1,0 +1,474 @@
+body {
+    background-color: #000000;
+    background-image: url(Fon/bg-wool-dark.png) ;
+    background-repeat: repeat;
+    overflow-x: hidden;
+    padding: 0;
+    margin: 0;
+}
+.dws {
+    position: absolute;
+    top: 58px;
+    right: -90px;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+}
+.butt {
+    position: relative;
+    display: block;
+    color: white;
+    font-size: 16px;
+    font-family: Minecraft Rus;
+    text-decoration: none;
+    margin: 30px 0;
+    background: none;
+    border: 3px solid #36912f;
+    padding: 14px 60px;
+    text-transform: capitalize;
+    overflow: hidden;
+    transition: 0.6s all ease;
+}
+.butt::before {
+    background: #286624;
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: -1;
+    transition: all 0.3s ease;
+}
+.butt1::before {
+    width: 100%;
+    height: 0%;
+}
+.butt1:hover::before {
+    height: 100%;
+}
+.fonbtn {
+    position: absolute;
+    display: block;
+    height: 48px;
+    width: 292px;
+    top: 35px;
+    right: 60px;
+    background-color: #46a73f;
+    z-index: 0;
+}
+.slider {
+    position: relative;
+    width: 915px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 20px;
+}
+.slider img {
+    display: block;
+    max-width: 100%;
+    height: 168px;
+    width: 300px;
+    cursor: pointer;
+}
+.slider_item {
+    padding: 0px 5px;
+}
+.slick-arrow {
+    position: absolute;
+    top: 56px;
+    z-index: 3;
+    font-size: 0;
+    width: 55px;
+    height: 60px;
+    border: none;
+    cursor: pointer;
+    background-color: #46a73f;
+    border-top: 4px solid #64ec5a;
+    border-bottom: 4px solid #22521e;
+}
+.slick-next {
+    right: -60px;
+    background-image: url(images/rightarrow.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 50%;
+    padding-top: 20px;
+    top: 75px;
+}
+.slick-next:before {
+	content:'';
+	position: absolute;
+	bottom: 25px;
+	left: 0;
+	width: 55px;
+	height: 0;
+	background: rgba(255,255,255,0.3);;
+	transition: height 0.5s ease;
+}
+.slick-next:hover:before {
+	height: 31px;
+}
+.slick-next:after {
+    content:'';
+	position: absolute;
+	top: 27px;
+	left: 0;
+	width: 55px;
+	height: 0;
+	background: rgba(255,255,255,0.3);
+	transition: height 0.5s ease;
+}
+.slick-next:hover:after {
+    height: 29px;
+}
+.slick-prev {
+    left: -60px;
+    background-image: url(images/leftarrow.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 50%;
+    top: 75px;
+}
+.slick-prev:before {
+	content:'';
+	position: absolute;
+	bottom: 25px;
+	left: 0;
+	width: 55px;
+	height: 0;
+	background: rgba(255,255,255,0.3);;
+	transition: height 0.5s ease;
+}
+.slick-prev:hover:before {
+	height: 31px;
+}
+.slick-prev:after {
+    content:'';
+	position: absolute;
+	top: 27px;
+	left: 0;
+	width: 55px;
+	height: 0;
+	background: rgba(255,255,255,0.3);
+	transition: height 0.5s ease;
+}
+.slick-prev:hover:after {
+    height: 29px;
+}
+.new {
+    color: rgb(170, 170, 170);
+    font-size: 40px;
+    font-family: Minecraft Rus;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.minecraft-1-20 { 
+    color: rgb(170, 170, 170);
+    font-size: medium;
+    font-family: Minecraft Rus;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 50%;
+    letter-spacing: 1px;
+    line-height: 20px;
+}
+.minecraft-1-19 {
+    color: rgb(170, 170, 170);
+    font-size: medium;
+    font-family: Minecraft Rus;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 50%;
+    letter-spacing: 1px;
+    line-height: 20px;
+}
+.version-1-20 {
+    color: rgb(170, 170, 170);
+    font-size: 30px;
+    font-family: Minecraft Rus;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.version-1-19 {
+    color: rgb(170, 170, 170);
+    font-size: 30px;
+    font-family: Minecraft Rus;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.bg-end {
+    position: relative;
+    display: block;
+    background-color: #313131;
+    width: 100%;
+    height: 150px;
+    border: none;
+    z-index: -1;
+}
+/*.text-end {
+    position: absolute;
+    color: #666666;
+    font-family: Minecraft Rus;
+    z-index: 0;
+    list-style: none;
+    right: 20px;
+}
+.text2-end {
+    position: absolute;
+    color: #fff;
+    font-family: Minecraft Rus;
+    z-index: 0;
+    top: 1420px;
+    left: 48%;
+}*/
+h1.bg-text-h1 {
+    position: absolute;
+    display: block;
+    color: #fff;
+    font-family: Noto Sans;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 40px;
+    letter-spacing: 1px;
+    width: 500px;
+    word-wrap: break-word;
+    top: 170px;
+    left: 260px;
+}
+p.bg-text-p {
+    display: block;
+    position: absolute;
+    margin-top: 25px;
+    font-family: "Noto Sans";
+    font-size: 18px;
+    line-height: 26px;
+    color: #fff;
+    font-weight: 400;
+    width: 550px;
+    top: 300px;
+    left: 260px;
+}
+.anim-border {
+    overflow: hidden;
+}
+.btn-download-top {
+    position: absolute;
+
+    top: 450px;
+    left: 260px;
+
+    height: 70px;
+    width: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transition: all 0.6s ease 0s;
+
+    text-decoration: none;
+
+    background-color: #36912f;
+
+    z-index: 4;
+
+    border-top: 4px solid #64ec5a;
+    border-bottom: 4px solid #286624;
+}
+.btn-download-top:before {
+    content:'';
+	position: absolute;
+	top: 70px;
+	left: 0;
+	width: 350px;
+	height: 0;
+	background: #313131;
+	transition: all 0.3s ease 0s;
+}
+.btn-download-top:hover:before {
+    height: 4px;
+}
+.btn-download-top:after {
+    content:'';
+	position: absolute;
+	bottom: 70px;
+	left: 0;
+	width: 350px;
+	height: 0px;
+	background: #313131;
+	transition: all 0.3s ease 0s;
+}
+.btn-download-top:hover:after {
+    height: 4px;
+}
+.btn-download-top:hover {
+    background-color: #313131;
+    transition: all 0.1s ease 0s;
+}
+
+.btn-download-top-text {
+    color: white;
+    text-transform: uppercase;
+    font-family: Noto Sans;
+    font-weight: 700;
+    font-size: 20px;
+
+    z-index: 6;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background: #1b1b1b;
+}
+::-webkit-scrollbar-thumb {
+    background: #3b3b3b;
+    border: 1px solid #1b1b1b;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #464646;
+}
+.down-selection {
+    padding-bottom: 100px;
+}
+
+.end-bg-style {
+    padding-top: 150px;
+    position: relative;
+}
+
+
+.text-end-1 {
+    position: absolute;
+    color: white;
+    font-family: Noto Sans;
+    font-size: 15px;
+    right: 30px;
+    bottom: 5px;
+}
+
+.text-end-2 {
+    position: absolute;
+    left: 42%;
+    bottom: 70px;
+    
+    bottom: 70px;
+}
+.text-end-btn-2 {
+    color: white;
+    font-family: Noto Sans;
+    font-size: 20px;
+}
+
+.stile-link {
+    color: white;
+}
+
+.icon-company {
+    position: absolute;
+    display: block;
+    color: white;
+    font-family: Noto Sans;
+    font-size: 20px;
+    background-image: url(icon/icon-hacker-mine.png);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: 50px 50px;
+    height: 50px;
+    width: 160px;
+    padding-left: 60px;
+    justify-content: center;
+    line-height: 47px;
+    right: 10px;
+    cursor: pointer;
+}
+.license-agreement {
+    text-align: center;
+    color: rgb(196, 196, 196);
+    font-family: Noto Sans;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+/* BOLD */
+
+.text-1,
+.text-2,
+.text-7 {
+    color: rgb(196, 196, 196);
+    font-family: Noto Sans;
+    font-size: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    font-weight: bold;
+}
+
+/* NO BOLD */
+
+.text-3 {
+    color: rgb(196, 196, 196);
+    font-family: Noto Sans;
+    font-size: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+
+/* NO BOLD AND PADDING */
+
+.text-4, .text-5, .text-6,
+.text-8, .text-9, .text-10, 
+.text-11 {
+    color: rgb(196, 196, 196);
+    font-family: Noto Sans;
+    font-size: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    padding-left: 40px;
+}
+
+
+
+.link-qiwi {
+    color: rgb(196, 196, 196);
+}
+
+.rating {
+    position: absolute;
+    display: block;
+    color: white;
+    font-family: Noto Sans;
+    font-size: 20px;
+    width: 47px;
+    height: 37px;
+    text-align: center;
+    padding-top: 10px;
+    border: 2px solid white;
+    bottom: 1px;
+    left: 20px;
+}
+
+.qiwi-btn {
+    position: absolute;
+    height: 32px;
+    background-image: url(Icon/qiwi-logo.png);
+    background-repeat: no-repeat;
+    background-size: 40px 40px;
+    font-family: Noto Sans;
+    font-size: 18px;
+    color: white;
+    padding-top: 8px;
+    padding-left: 50px;
+    bottom: 10px;
+    left: 100px;
+    cursor: pointer;
+}
